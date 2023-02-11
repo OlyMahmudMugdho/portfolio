@@ -47,7 +47,7 @@ html{
   align-items: center;
   width: 100%;
   border-bottom: 2px solid #dbd6d6;
-  box-shadow: 20px 0px;
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
   position: fixed;
   background-color: #fff;
 }
