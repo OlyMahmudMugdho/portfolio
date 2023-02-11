@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo-img > img {
+    margin-left: 5rem;
+  width: 8rem;
+  margin-top: 0.6rem;
+}
+.profile-img {
+  background: hsla(0, 100%, 67%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(0, 100%, 67%, 1) 0%,
+    hsla(0, 100%, 89%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(0, 100%, 67%, 1) 0%,
+    hsla(0, 100%, 89%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(0, 100%, 67%, 1) 0%,
+    hsla(0, 100%, 89%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF5858", endColorstr="#FFC8C8", GradientType=1 );
+  border-radius: 43% 57% 48% 52% / 40% 39% 61% 60%;
+}
+.profile-img > img {
+  border-radius: 43% 57% 48% 52% / 40% 39% 61% 60%;
+  width: 18rem;
+}
+.top-header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #dbd6d6;
+  box-shadow: 20px 0px;
+  position: fixed;
+  background-color: #fff;
+}
+
+.top-header > nav > ul {
+  list-style-type: none;
+}
+
+.top-header > nav > ul > li {
+  display: inline-block;
+}
+/* nav {
+  display: flex;
+  box-shadow: 1rem;
+  width: 100%;
+  
+} */
+.nav-link {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.6rem 2rem;
+}
+.nav-link:hover {
+  color: #5b9bb1;
+  text-decoration: underline;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+  transition: 2s all ease;
+}
+.quick-intro, .profile-img{
+    margin: 12rem 8rem 0rem 8rem
+}
+.quick-intro{
+    line-height: 3.5rem;
+    max-width: 40%;
+}
+.quick-intro > h1{
+    font-size: 2.6rem;
+}
+.quick-intro > p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.mahmud{
+    color: #d81354;
+}
+.resume{
+    color: #fff;
+    background-color: #d91254;
+    text-decoration: none;
+    padding: 0.8rem 0.5rem;
+    font-size: 1.3rem;
+    border: 1px solid hsl(340, 84%, 46%);
+    border-radius: 0.3rem;
+}
+.resume:hover{
+    background-color: #d91254dc;
+}
+.about{
+    min-height: 100vh;
+    scroll-margin-top: 8rem;
+    display: flex;
+
+}
+.formal-img{
+    width: 17rem;
+}
