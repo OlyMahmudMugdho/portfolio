@@ -1,1 +1,1 @@
-alert("Warning!!!...This site is under construction");
+// alert("Warning!!!...This site is under construction");

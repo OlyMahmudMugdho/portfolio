@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://kit.fontawesome.com/5aa44d0c56.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/5aa44d0c56.js" crossorigin="anonymous"></script>
     <title>M. Oly Mahmud | Web Developer</title>
 </head>
 
@@ -19,7 +19,7 @@
                 <li><a class="nav-link" href="#about">About</a></li>
                 <li><a class="nav-link" href="#skills">Skills</a></li>
                 <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -65,15 +65,15 @@
                                 <p><span class="info-s">Birthday</span> : 20-10-2002</p>
                                 <p><span class="info-s">Location</span> : Pabna, Rajshahi, Bangladesh</p>
                                 <p><span class="info-s">Study</span> : Pabna University of Science & Technology</p>
-                                <p><span class="info-s">Mail</span> : <a target="_blank" href="mailto:oly.ice.pust@gmail.com"
-                                        class="mail">oly.ice.pust@gmail.com</a></p>
+                                <p><span class="info-s">Mail</span> : <a target="_blank"
+                                        href="mailto:oly.ice.pust@gmail.com" class="mail">oly.ice.pust@gmail.com</a></p>
                             </div>
                             <div class="info-right">
                                 <p><span class="info-s">Age</span> : 20</p>
                                 <p><span class="info-s">Interests</span> : Web Development, Machine Learning</p>
                                 <p><span class="info-s">Degree</span> : Information & Communication Engineering</p>
-                                <p><span class="info-s">Phone</span> : <a class="phone"
-                                        href="tel:+8801580455041" target="_blank">+8801580455041</a></p>
+                                <p><span class="info-s">Phone</span> : <a class="phone" href="tel:+8801580455041"
+                                        target="_blank">+8801580455041</a></p>
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,8 @@
                         <div class="project-info-section">
                             <h2 class="project-title">PUST ICE Website</h2>
                             <p class="project-details">
-                                Website of Department of Information & Communication Engineering, Pabna University of Science & Technology
+                                Website of Department of Information & Communication Engineering, Pabna University of
+                                Science & Technology
                             </p>
                         </div>
                         <div class="project-links">
@@ -177,7 +178,8 @@
                         </div>
                         <div class="project-info-section">
                             <h2 class="project-title">TO-DO</h2>
-                            <p class="project-details">Simple To-Do list app using JavaScript that uses Local Storage to save data</p>
+                            <p class="project-details">Simple To-Do list app using JavaScript that uses Local Storage to
+                                save data</p>
                         </div>
                         <div class="project-links">
                             <a class="project-link" href="#">Live Demo</a>
@@ -200,48 +202,52 @@
                 </div>
             </div>
 
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="contact-header">
-                    <h3>Get in Touch</h3>
+                    <h1>Get in Touch</h1>
                 </div>
-                <div class="adress-section">
-                    <div class="adress-key">
-                        <p>
-                            City
-                        </p>
-                        <p>
-                            State/Division
-                        </p>
-                        <p>
-                            Country
-                        </p>
+                <div class="contact-container">
+                    <div class="adress-section">
+                        <div class="adress-container">
+                            <div class="adress-key">
+                                <p>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-phone"></i>
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-envelope"></i>
+                                </p>
+                            </div>
+
+                            <div class="adress-value">
+                                <p>Pabna,Bangladesh</p>
+                                <p>+8801767229835</p>
+                                <p>oly.ice.pust@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="social-section">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        </div>
                     </div>
 
-                    <div class="adress-value">
-                        <p>Pabna</p>
-                        <p>Rajshahi</p>
-                        <p>Bangladesh</p>
+                    <div class="contact-form">
+                        <h2>Send Me A Message</h2>
+                        <input type="text" name="name" id="name" class="name" placeholder="Type your name">
+                        <input type="email" name="email" id="email" class="email" placeholder="Type your E-mail">
+                        <textarea name="messge" id="message" class="message" cols="30" rows="10"
+                            placeholder="Message"></textarea>
+                        <button class="send-button">Send Message</button>
                     </div>
-                </div>
-
-                <div class="contact-form">
-                    <input type="text" name="name" id="name" class="name">
-                    <input type="email" name="email" id="email" class="email">
-                    <input type="text" name="message" id="message" class="message">
-                    <button>Send Message</button>
                 </div>
             </div>
 
-            <footer>
+            <footer class="footer">
                 <div class="copyright-section">
                     <p>© Copyright 2022-2023. All rights are reserved.</p>
-                </div>
-                <div class="social-links-section">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
                 </div>
             </footer>
         </div>
