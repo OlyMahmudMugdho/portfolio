@@ -8,12 +8,13 @@ const send = async () => {
     let nam = document.getElementById("name").value;
     let mail = document.getElementById("email").value;
     let msg = document.getElementById("message").value;
-    console.log(nam);
-    console.log(msg);
+    let res = document.querySelector(".result");
     const { data, error } = await supabase
   .from('messages')
   .insert([
     { name: nam, email: mail , message : msg },
   ])
-  
+  res.style.display = "initial";
+  res.innerHTML = "";
+  res.innerHTML = " Message Sent";
 }
