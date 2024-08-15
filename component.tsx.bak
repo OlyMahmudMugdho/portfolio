@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { JSX, SVGProps } from "react"
 
-export default function Component() {
+export default function Component2Tsx() {
   return (
       <div className="flex flex-col min-h-[100dvh]">
         <header className="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between">
