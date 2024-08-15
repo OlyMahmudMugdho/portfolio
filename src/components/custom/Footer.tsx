@@ -8,7 +8,7 @@ export default function Footer(){
     return (
         <footer className="bg-primary text-primary-foreground py-4 px-6">
             <div className="container mx-auto max-w-4xl flex items-center justify-between">
-                <p className="text-sm">&copy; 2024 Rafi Hossain. All rights reserved.</p>
+                <p className="text-sm">&copy; 2024 M. Oly Mahmud. All rights reserved.</p>
                 <div className="flex items-center gap-4">
                     <Link href="#" target="_blank" prefetch={false}>
                         <GitlabIcon className="w-6 h-6"/>
