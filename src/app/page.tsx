@@ -6,12 +6,7 @@
  * @see https://v0.dev/t/qJH8dTOwuRx
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import Header from "@/components/custom/Header";
 import Hero from "@/components/custom/Hero"
 import About from "@/components/custom/About";
