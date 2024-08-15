@@ -1,15 +1,16 @@
 import {
-    CloudIcon,
-    CodepenIcon,
-    DatabaseIcon, DockIcon,
-    EclipseIcon,
-    GitlabIcon,
-    LaptopIcon,
-    SunSnowIcon,
-    TypeIcon,
-    WrenchIcon,
-    XIcon
 } from "@/app/page";
+import CloudIcon from "@/components/icons/CloudIcon";
+import EclipseIcon from "@/components/icons/EclipseIcon";
+import CodepenIcon from "@/components/icons/CodePenIcon";
+import DatabaseIcon from "@/components/icons/DataBaseIcon";
+import DockIcon from "@/components/icons/DockIcon";
+import SunSnowIcon from "@/components/icons/SunSnowIcon";
+import TypeIcon from "@/components/icons/TypeIcon";
+import XIcon from "@/components/icons/XIcon";
+import WrenchIcon from "@/components/icons/WrenchIcon";
+import GitlabIcon from "@/components/icons/GitlabIcon";
+import LaptopIcon from "@/components/icons/LaptopIcon";
 
 
 export default function Skills(){

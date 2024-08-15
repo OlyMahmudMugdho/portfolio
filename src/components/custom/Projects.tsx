@@ -1,8 +1,14 @@
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import Link from "next/link";
-import {CodepenIcon, DockIcon, EclipseIcon, GithubIcon, GitlabIcon, SunSnowIcon, WrenchIcon} from "@/app/page";
 import {CloudIcon} from "lucide-react";
 import React from "react";
+import EclipseIcon from "@/components/icons/EclipseIcon";
+import CodepenIcon from "@/components/icons/CodePenIcon";
+import DockIcon from "@/components/icons/DockIcon";
+import SunSnowIcon from "@/components/icons/SunSnowIcon";
+import GithubIcon from "@/components/icons/GithubIcon";
+import WrenchIcon from "@/components/icons/WrenchIcon";
+import GitlabIcon from "@/components/icons/GitlabIcon";
 
 
 export default function Projects() {
@@ -14,10 +20,10 @@ export default function Projects() {
                     <h2 className="text-3xl font-bold md:text-4xl">My Projects</h2>
                     <p className="text-muted-foreground">Here are some of the projects I have worked on:</p>
                 </div>
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    <Card>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+                    <Card className={"flex flex-col justify-between"}>
                         <CardHeader>
-                            <CardTitle>Reekto E-commerce</CardTitle>
+                            <CardTitle>E-commerce</CardTitle>
                             <CardDescription>
                                 A full-stack e-commerce application built with Java, Spring Boot, React.js, and Next.js.
                             </CardDescription>
@@ -41,7 +47,7 @@ export default function Projects() {
                             </Link>
                         </CardFooter>
                     </Card>
-                    <Card>
+                    <Card className={"flex flex-col justify-between"}>
                         <CardHeader>
                             <CardTitle>DevOps Automation</CardTitle>
                             <CardDescription>
@@ -68,7 +74,7 @@ export default function Projects() {
                             </Link>
                         </CardFooter>
                     </Card>
-                    <Card>
+                    <Card className={"flex flex-col justify-between"}>
                         <CardHeader>
                             <CardTitle>Microservices with Spring Boot</CardTitle>
                             <CardDescription>
