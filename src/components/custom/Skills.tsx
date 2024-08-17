@@ -11,7 +11,6 @@ import GitlabIcon from "@/components/icons/GitlabIcon";
 import LaptopIcon from "@/components/icons/LaptopIcon";
 import IconJava from "@/components/icons/custom/IconJava";
 import IconSpring from "@/components/icons/custom/IconSpring";
-import IconJavascript from "@/components/icons/custom/IconJavascript";
 import IconTypescript from "@/components/icons/custom/IconTypescript";
 import IconNode from "@/components/icons/custom/IconNode";
 import IconExpress from "@/components/icons/custom/IconExpress";
@@ -24,6 +23,7 @@ import IconDocker from "@/components/icons/custom/IconDocker";
 import IconKubernetes from "@/components/icons/custom/IconKubernetes";
 import IconAws from "@/components/icons/custom/IconAws";
 import IconGoogleCloud from "@/components/icons/custom/IconGoogleCloud";
+import IconJavascript from "@/components/icons/custom/IconJavascript";
 
 
 export default function Skills(){
