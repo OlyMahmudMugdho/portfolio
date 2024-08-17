@@ -9,6 +9,9 @@ import SunSnowIcon from "@/components/icons/SunSnowIcon";
 import GithubIcon from "@/components/icons/GithubIcon";
 import WrenchIcon from "@/components/icons/WrenchIcon";
 import GitlabIcon from "@/components/icons/GitlabIcon";
+import InventoryProject from "@/components/custom/projects/InventoryProject";
+import CICDProject from "@/components/custom/projects/CICDProject";
+import UrlShortener from "@/components/custom/projects/UrlShortener";
 
 
 export default function Projects() {
@@ -21,85 +24,9 @@ export default function Projects() {
                     <p className="text-muted-foreground">Here are some of the projects I have worked on:</p>
                 </div>
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
-                    <Card className={"flex flex-col justify-between"}>
-                        <CardHeader>
-                            <CardTitle>E-commerce</CardTitle>
-                            <CardDescription>
-                                A full-stack e-commerce application built with Java, Spring Boot, React.js, and Next.js.
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <div className="flex items-center gap-2">
-                                <EclipseIcon className="w-6 h-6"/>
-                                <CodepenIcon className="w-6 h-6"/>
-                                <CodepenIcon className="w-6 h-6"/>
-                                <DockIcon className="w-6 h-6"/>
-                                <CloudIcon className="w-6 h-6"/>
-                            </div>
-                        </CardContent>
-                        <CardFooter>
-                            <Link
-                                href="#"
-                                className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                                prefetch={false}
-                            >
-                                View Project
-                            </Link>
-                        </CardFooter>
-                    </Card>
-                    <Card className={"flex flex-col justify-between"}>
-                        <CardHeader>
-                            <CardTitle>DevOps Automation</CardTitle>
-                            <CardDescription>
-                                A CI/CD pipeline for automating the deployment of web applications using Jenkins, GitHub
-                                Actions,
-                                Docker, and Kubernetes.
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <div className="flex items-center gap-2">
-                                <WrenchIcon className="w-6 h-6"/>
-                                <GitlabIcon className="w-6 h-6"/>
-                                <DockIcon className="w-6 h-6"/>
-                                <CloudIcon className="w-6 h-6"/>
-                            </div>
-                        </CardContent>
-                        <CardFooter>
-                            <Link
-                                href="#"
-                                className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                                prefetch={false}
-                            >
-                                View Project
-                            </Link>
-                        </CardFooter>
-                    </Card>
-                    <Card className={"flex flex-col justify-between"}>
-                        <CardHeader>
-                            <CardTitle>Microservices with Spring Boot</CardTitle>
-                            <CardDescription>
-                                A microservices-based application built with Java, Spring Boot, and Golang.
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <div className="flex items-center gap-2">
-                                <EclipseIcon className="w-6 h-6"/>
-                                <SunSnowIcon className="w-6 h-6"/>
-                                <GithubIcon className="w-6 h-6"/>
-                                <DockIcon className="w-6 h-6"/>
-                                <CloudIcon className="w-6 h-6"/>
-                            </div>
-                        </CardContent>
-                        <CardFooter>
-                            <Link
-                                href="#"
-                                className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                                prefetch={false}
-                            >
-                                View Project
-                            </Link>
-                        </CardFooter>
-                    </Card>
+                    <InventoryProject />
+                    <UrlShortener />
+                    <CICDProject />
                 </div>
             </div>
         </section>
