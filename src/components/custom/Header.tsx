@@ -13,7 +13,7 @@ export default function Header(){
     const toggleNavbar = () => {
 
         if (!navOpen) {
-            setNavClass("flex flex-col justify-start items-center h-screen md:flex gap-6 w-full md:hidden")
+            setNavClass("flex flex-col justify-start items-center h-screen md:flex gap-6 w-full")
             setNavOpen(true)
             setNavButtonClass("hidden")
             return
@@ -26,8 +26,8 @@ export default function Header(){
     }
 
     const closeNavbar = () => {
-        if (navOpen) {
-            setNavClass("hidden md:flex gap-6")
+        if (navOpen && navClass==="flex flex-col justify-start items-center h-screen md:flex gap-6 w-full") {
+            setNavClass("hidden flex flex-col justify-start items-center h-screen md:flex gap-6 w-full")
             setNavButtonClass("static md:hidden")
             setNavOpen(false)
             return
@@ -55,16 +55,16 @@ export default function Header(){
                     <MenuIcon className="w-6 h-6"/>
                     <span className="sr-only">Toggle menu</span>
                 </Button>
-                <Link onClick={toggleNavbar} href="#about" className="hover:underline underline-offset-4" prefetch={false}>
+                <Link onClick={closeNavbar} href="#about" className="hover:underline underline-offset-4" prefetch={false}>
                     About
                 </Link>
-                <Link href="#projects" className="hover:underline underline-offset-4" prefetch={false}>
+                <Link onClick={closeNavbar} href="#projects" className="hover:underline underline-offset-4" prefetch={false}>
                     Projects
                 </Link>
-                <Link href="#skills" className="hover:underline underline-offset-4" prefetch={false}>
+                <Link onClick={closeNavbar} href="#skills" className="hover:underline underline-offset-4" prefetch={false}>
                     Skills
                 </Link>
-                <Link href="#contact" className="hover:underline underline-offset-4" prefetch={false}>
+                <Link onClick={closeNavbar} href="#contact" className="hover:underline underline-offset-4" prefetch={false}>
                     Contact
                 </Link>
             </nav>
