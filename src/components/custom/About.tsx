@@ -20,7 +20,7 @@ export default function About() {
                     <div className="space-y-4">
                         <div>
                             <h4 className="text-lg font-bold">Full-Stack Developer, Reekto</h4>
-                            <p className="text-muted-foreground">June 2021 - Present</p>
+                            <p className="text-muted-foreground">August 2023 - Present</p>
                             <p className="text-muted-foreground">
                                 Developed and maintained web applications using Java, Spring Boot, React.js, and
                                 Next.js.
@@ -38,7 +38,7 @@ export default function About() {
                             <h4 className="text-lg font-bold">
                                 B.Sc. (Engineering) in Information and Communication Engineering
                             </h4>
-                            <p className="text-muted-foreground">Pabna University of Science and Technology, 2019 -
+                            <p className="text-muted-foreground">Pabna University of Science and Technology, May 2022 -
                                 Present</p>
                         </div>
                     </div>
