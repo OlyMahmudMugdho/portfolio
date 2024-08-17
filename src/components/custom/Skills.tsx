@@ -1,16 +1,29 @@
 import {
 } from "@/app/page";
 import CloudIcon from "@/components/icons/CloudIcon";
-import EclipseIcon from "@/components/icons/EclipseIcon";
 import CodepenIcon from "@/components/icons/CodePenIcon";
 import DatabaseIcon from "@/components/icons/DataBaseIcon";
 import DockIcon from "@/components/icons/DockIcon";
-import SunSnowIcon from "@/components/icons/SunSnowIcon";
 import TypeIcon from "@/components/icons/TypeIcon";
 import XIcon from "@/components/icons/XIcon";
 import WrenchIcon from "@/components/icons/WrenchIcon";
 import GitlabIcon from "@/components/icons/GitlabIcon";
 import LaptopIcon from "@/components/icons/LaptopIcon";
+import IconJava from "@/components/icons/custom/IconJava";
+import IconSpring from "@/components/icons/custom/IconSpring";
+import IconJavascript from "@/components/icons/custom/IconJavascript";
+import IconTypescript from "@/components/icons/custom/IconTypescript";
+import IconNode from "@/components/icons/custom/IconNode";
+import IconExpress from "@/components/icons/custom/IconExpress";
+import IconReact from "@/components/icons/custom/IconReact";
+import IconNextjs from "@/components/icons/custom/IconNextjs";
+import IconJenkins from "@/components/icons/custom/IconJenkins";
+import IconGithubactions from "@/components/icons/custom/IconGithubactions";
+import IconLinux from "@/components/icons/custom/IconLinux";
+import IconDocker from "@/components/icons/custom/IconDocker";
+import IconKubernetes from "@/components/icons/custom/IconKubernetes";
+import IconAws from "@/components/icons/custom/IconAws";
+import IconGoogleCloud from "@/components/icons/custom/IconGoogleCloud";
 
 
 export default function Skills(){
@@ -24,67 +37,67 @@ export default function Skills(){
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                     <div className="flex items-center gap-2">
-                        <EclipseIcon className="w-6 h-6"/>
+                        <IconJava className="w-8 h-8"/>
                         <span>Java</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <SunSnowIcon className="w-6 h-6"/>
+                        <IconSpring className="w-8 h-8"/>
                         <span>Spring Boot</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <EclipseIcon className="w-6 h-6"/>
+                        <IconJavascript className="w-8 h-8"/>
                         <span>JavaScript</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <TypeIcon className="w-6 h-6"/>
+                        <IconTypescript className="w-8 h-8"/>
                         <span>TypeScript</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <CodepenIcon className="w-6 h-6"/>
+                        <IconNode className="w-8 h-8"/>
                         <span>Node.js</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <XIcon className="w-6 h-6"/>
+                        <IconExpress className="w-8 h-8"/>
                         <span>Express.js</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <CodepenIcon className="w-6 h-6"/>
+                        <IconReact className="w-8 h-8"/>
                         <span>React.js</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <CodepenIcon className="w-6 h-6"/>
+                        <IconNextjs className="w-8 h-8"/>
                         <span>Next.js</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <DatabaseIcon className="w-6 h-6"/>
+                        <DatabaseIcon className="w-8 h-8"/>
                         <span>SQL</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <WrenchIcon className="w-6 h-6"/>
+                        <IconJenkins className="w-8 h-8"/>
                         <span>Jenkins</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <GitlabIcon className="w-6 h-6"/>
+                        <IconGithubactions className="w-8 h-8"/>
                         <span>GitHub Actions</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <LaptopIcon className="w-6 h-6"/>
+                        <IconLinux className="w-8 h-8"/>
                         <span>Linux</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <DockIcon className="w-6 h-6"/>
+                        <IconDocker className="w-8 h-8"/>
                         <span>Docker</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <CloudIcon className="w-6 h-6"/>
+                        <IconKubernetes className="w-8 h-8"/>
                         <span>Kubernetes</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <CloudIcon className="w-6 h-6"/>
+                        <IconAws className="w-8 h-8"/>
                         <span>AWS</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <CloudIcon className="w-6 h-6"/>
+                        <IconGoogleCloud className="w-8 h-8"/>
                         <span>GCP</span>
                     </div>
                 </div>
