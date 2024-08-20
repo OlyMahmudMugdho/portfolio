@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 
 const nodemailer = require('nodemailer')
 
-export async function sendMessageAsMail(request : Request) {
+export async function POST(request : Request) {
         
     
 
@@ -55,5 +55,3 @@ export async function sendMessageAsMail(request : Request) {
         }, {status : 400})
     }
 }
-
-export const POST = sendMessageAsMail
