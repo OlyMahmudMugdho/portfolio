@@ -15,6 +15,12 @@ export default function Contact() {
     const [visitorsMessage, setVisitorsMessage] = useState("")
     const [loading, setLoading] = useState(false)
 
+    const resetStates = () => {
+        setName("")
+        setEmailAddress("")
+        setVisitorsMessage("")
+        setLoading(false)
+    }
 
     const sendMessage = async (event: FormEvent<HTMLFormElement>, name: string, emailAddress: string, visitorsMessage: string) => {
         event.preventDefault();
@@ -28,8 +34,8 @@ export default function Contact() {
             })
         })
             .then(res => res.json())
-            .then(data => data.ok ?  alert("Message sent successfully") : alert("something went wrong"))
-            .then(() => setLoading(false))
+            .then(data => data.ok ? alert("Message sent successfully") : alert("something went wrong"))
+            .then(() => resetStates())
     }
 
 
@@ -45,16 +51,16 @@ export default function Contact() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="space-y-2">
                             <Label htmlFor="name">Name</Label>
-                            <Input onChange={e => setName(e.target.value)} name="name" id="name" type="text" required />
+                            <Input value={name} onChange={e => setName(e.target.value)} name="name" id="name" type="text" required />
                         </div>
                         <div className="space-y-2">
                             <Label htmlFor="email">Email</Label>
-                            <Input onChange={e => setEmailAddress(e.target.value)} name="email" id="email" type="email" required />
+                            <Input value={emailAddress} onChange={e => setEmailAddress(e.target.value)} name="email" id="email" type="email" required />
                         </div>
                     </div>
                     <div className="space-y-2">
                         <Label htmlFor="message">Message</Label>
-                        <Textarea onChange={e => setVisitorsMessage(e.target.value)} name="message" id="message" rows={5} required />
+                        <Textarea value={visitorsMessage} onChange={e => setVisitorsMessage(e.target.value)} name="message" id="message" rows={5} required />
                     </div>
                     <Button disabled={loading} type="submit" className="w-full">
                         {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />
