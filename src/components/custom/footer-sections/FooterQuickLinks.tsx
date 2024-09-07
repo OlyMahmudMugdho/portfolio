@@ -13,7 +13,7 @@ function FooterQuickLinks() {
                     <Link href="/projects" className="hover:text-gray-400 transition-colors">Projects</Link>
                 </li>
                 <li>
-                    <Link href="/blog" className="hover:text-gray-400 transition-colors">Blog</Link>
+                    <Link href="https://dev.to/olymahmud/" target="_blank" className="hover:text-gray-400 transition-colors">Blog</Link>
                 </li>
                 <li>
                     <Link href="/contact" className="hover:text-gray-400 transition-colors">Contact</Link>
