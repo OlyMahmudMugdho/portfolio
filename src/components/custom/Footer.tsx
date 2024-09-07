@@ -1,29 +1,20 @@
-import Link from "next/link";
-import GitlabIcon from "@/components/icons/GitlabIcon";
-import LinkedinIcon from "@/components/icons/LinkedinIcon";
-import MailIcon from "@/components/icons/MailIcon";
+import FooterQuickLinks from "./footer-sections/FooterQuickLinks";
+import FooterContact from "./footer-sections/FooterContact";
+import FooterSocial from "./footer-sections/FooterSocial";
+import FooterBottom from "./footer-sections/FooterBottom";
 
-
-export default function Footer(){
+export default function Footer() {
     return (
-        <footer className="bg-primary text-primary-foreground py-4 px-6">
-            <div className="container mx-auto max-w-4xl flex items-center justify-between">
-                <p className="text-sm">&copy; 2024 M. Oly Mahmud. All rights reserved.</p>
-                <div className="flex items-center gap-4">
-                    <Link href="#" target="_blank" prefetch={false}>
-                        <GitlabIcon className="w-6 h-6"/>
-                        <span className="sr-only">GitHub</span>
-                    </Link>
-                    <Link href="#" target="_blank" prefetch={false}>
-                        <LinkedinIcon className="w-6 h-6"/>
-                        <span className="sr-only">LinkedIn</span>
-                    </Link>
-                    <Link href="#" prefetch={false}>
-                        <MailIcon className="w-6 h-6"/>
-                        <span className="sr-only">Email</span>
-                    </Link>
+        <footer className="bg-primary text-primary-foreground py-10 px-8">
+            <div className="container mx-auto max-w-7xl">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-16 md:gap-56 text-center md:text-left">
+
+                    <FooterQuickLinks />
+                    <FooterContact />
+                    <FooterSocial />
                 </div>
+                <FooterBottom />
             </div>
         </footer>
-    )
+    );
 }
