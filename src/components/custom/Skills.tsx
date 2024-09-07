@@ -1,29 +1,30 @@
-import {
-} from "@/app/page";
+import {} from "@/app/page";
 import CloudIcon from "@/components/icons/CloudIcon";
 import CodepenIcon from "@/components/icons/CodePenIcon";
 import DatabaseIcon from "@/components/icons/DataBaseIcon";
 import DockIcon from "@/components/icons/DockIcon";
-import TypeIcon from "@/components/icons/TypeIcon";
-import XIcon from "@/components/icons/XIcon";
-import WrenchIcon from "@/components/icons/WrenchIcon";
 import GitlabIcon from "@/components/icons/GitlabIcon";
 import LaptopIcon from "@/components/icons/LaptopIcon";
+import TypeIcon from "@/components/icons/TypeIcon";
+import WrenchIcon from "@/components/icons/WrenchIcon";
+import XIcon from "@/components/icons/XIcon";
+import IconAws from "@/components/icons/custom/IconAws";
+import IconDocker from "@/components/icons/custom/IconDocker";
+import IconExpress from "@/components/icons/custom/IconExpress";
+import IconGithubactions from "@/components/icons/custom/IconGithubactions";
+import IconGoogleCloud from "@/components/icons/custom/IconGoogleCloud";
 import IconJava from "@/components/icons/custom/IconJava";
 import IconSpring from "@/components/icons/custom/IconSpring";
+import IconJavascript from "@/components/icons/custom/IconJavascript";
 import IconTypescript from "@/components/icons/custom/IconTypescript";
 import IconNode from "@/components/icons/custom/IconNode";
 import IconExpress from "@/components/icons/custom/IconExpress";
 import IconReact from "@/components/icons/custom/IconReact";
 import IconNextjs from "@/components/icons/custom/IconNextjs";
 import IconJenkins from "@/components/icons/custom/IconJenkins";
-import IconGithubactions from "@/components/icons/custom/IconGithubactions";
-import IconLinux from "@/components/icons/custom/IconLinux";
-import IconDocker from "@/components/icons/custom/IconDocker";
 import IconKubernetes from "@/components/icons/custom/IconKubernetes";
 import IconAws from "@/components/icons/custom/IconAws";
 import IconGoogleCloud from "@/components/icons/custom/IconGoogleCloud";
-import IconJavascript from "@/components/icons/custom/IconJavascript";
 
 
 export default function Skills(){
