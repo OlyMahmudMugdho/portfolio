@@ -1,3 +1,4 @@
+import GithubIcon from "@/components/icons/GithubIcon"
 import GitlabIcon from "@/components/icons/GitlabIcon"
 import LinkedinIcon from "@/components/icons/LinkedinIcon"
 import MailIcon from "@/components/icons/MailIcon"
@@ -9,13 +10,13 @@ function FooterSocial() {
         <div>
             <h3 className="text-lg font-semibold mb-3">Follow Me</h3>
             <div className="flex justify-center md:justify-start items-center gap-4">
-                <Link href="#" target="_blank" aria-label="GitLab" prefetch={false}>
-                    <GitlabIcon className="w-6 h-6 hover:scale-110 transition-transform duration-200" />
+                <Link href="https://github.com/OlyMahmudMugdho/" target="_blank" aria-label="GitLab" prefetch={false}>
+                    <GithubIcon className="w-6 h-6 hover:scale-110 transition-transform duration-200" />
                 </Link>
-                <Link href="#" target="_blank" aria-label="LinkedIn" prefetch={false}>
+                <Link href="https://www.linkedin.com/in/olymahmud/" target="_blank" aria-label="LinkedIn" prefetch={false}>
                     <LinkedinIcon className="w-6 h-6 hover:scale-110 transition-transform duration-200" />
                 </Link>
-                <Link href="#" aria-label="Email" prefetch={false}>
+                <Link href="mailto:oly.ice.pust@gmail.com" aria-label="Email" prefetch={false}>
                     <MailIcon className="w-6 h-6 hover:scale-110 transition-transform duration-200" />
                 </Link>
             </div>
