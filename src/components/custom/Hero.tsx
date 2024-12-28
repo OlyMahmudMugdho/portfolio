@@ -17,6 +17,14 @@ export default function Hero() {
                         Download Resume
                     </Link>
                     <Link
+                        href="https://dev.to/olymahmud/"
+                        target={"_blank"}
+                        className="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-6 text-sm font-medium text-primary shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                        prefetch={false}
+                    >
+                        Visit Blog
+                    </Link>
+                    <Link
                         href="#projects"
                         className="inline-flex h-10 items-center justify-center rounded-md border border-primary-foreground bg-primary px-6 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                         prefetch={false}
