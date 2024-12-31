@@ -3,7 +3,7 @@ function Head() {
     return (
         <head>
             {/* Meta tags */}
-            <title>M. Oly Mahmud | Full-Stack Web Developer & DevOps Engineer</title>
+            <title>M. Oly Mahmud | Software & DevOps Engineer</title>
             <meta name="description" content="M. Oly Mahmud is a full-stack web developer and DevOps engineer. He specializes in Java, Spring Boot, Node.js, Golang, Docker, Kubernetes, AWS, and GCP." />
             <meta name="keywords" content="M. Oly Mahmud, Full-Stack Developer, DevOps Engineer, Java, Spring Boot, Node.js, Golang, Docker, Kubernetes, AWS, GCP" />
             <meta name="author" content="M. Oly Mahmud" />
