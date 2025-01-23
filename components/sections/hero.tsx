@@ -12,7 +12,7 @@ export function HeroSection() {
             M. Oly Mahmud
           </h1>
           <p className="text-2xl text-muted-foreground mb-6">
-            Full-Stack Web Developer & DevOps Engineer
+            Back-End Focused Software & DevOps Engineer
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
