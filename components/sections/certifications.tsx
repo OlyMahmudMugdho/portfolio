@@ -12,7 +12,7 @@ const certifications = [
     title: "AWS Cloud Solutions Architect",
     issuer: "Amazon Web Services",
     date: "2024",
-    icon: <Award className="h-6 w-6" />
+    icon: <Trophy className="h-6 w-6" />
   }
 
 ]
