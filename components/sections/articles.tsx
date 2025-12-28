@@ -75,13 +75,6 @@ export function ArticlesSection() {
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
-                                    <div className="absolute top-4 left-4 flex flex-wrap gap-2">
-                                        {article.tag_list.slice(0, 2).map((tag, i) => (
-                                            <Badge key={i} className="bg-background/80 backdrop-blur-md text-[10px] uppercase font-bold">
-                                                {tag}
-                                            </Badge>
-                                        ))}
-                                    </div>
                                 </div>
                                 <CardContent className="p-6 flex flex-col flex-grow">
                                     <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3">
@@ -101,9 +94,16 @@ export function ArticlesSection() {
                                     <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">
                                         {article.title}
                                     </h3>
-                                    <p className="text-muted-foreground text-sm line-clamp-3 mb-6 flex-grow">
+                                    <p className="text-muted-foreground text-sm line-clamp-3 mb-4">
                                         {article.description}
                                     </p>
+                                    <div className="flex flex-wrap gap-2 mb-6">
+                                        {article.tag_list.map((tag, i) => (
+                                            <Badge key={i} variant="secondary" className="bg-primary/5 text-primary/70 border-none text-[10px] uppercase font-bold hover:bg-primary/10 transition-colors">
+                                                #{tag}
+                                            </Badge>
+                                        ))}
+                                    </div>
                                     <Button variant="link" className="p-0 h-auto justify-start text-primary font-semibold group-hover:translate-x-1 transition-transform">
                                         Read More →
                                     </Button>
