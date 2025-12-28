@@ -26,7 +26,9 @@ export function ExperienceSection() {
             <Card key={index}>
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <Building2 className="h-6 w-6 mt-1 text-muted-foreground" />
+                  <div className="p-3 bg-primary/10 rounded-lg text-primary flex-shrink-0">
+                    <Building2 className="h-6 w-6" />
+                  </div>
                   <div>
                     <h3 className="text-xl font-semibold">{exp.position}</h3>
                     <p className="text-muted-foreground mb-2">{exp.company} • {exp.period}</p>
