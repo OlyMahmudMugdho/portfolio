@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/sections/hero"
 import { AboutSection } from "@/components/sections/about"
+import { EducationSection } from "@/components/sections/education"
 import { ExperienceSection } from "@/components/sections/experience"
 import { CertificationsSection } from "@/components/sections/certifications"
 import { BadgesSection } from "@/components/sections/badges"
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      <EducationSection />
       <ExperienceSection />
       <CertificationsSection />
       <BadgesSection />
