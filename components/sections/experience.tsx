@@ -18,9 +18,9 @@ const experiences = [
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="min-h-screen flex items-center px-4">
-      <div className="max-w-4xl mx-auto py-16 w-full">
-        <h2 className="text-3xl font-bold mb-12 text-center">Work Experience</h2>
+    <section id="experience" className="py-20 flex items-center px-4">
+      <div className="max-w-4xl mx-auto w-full">
+        <h2 className="text-3xl font-bold mb-8 text-center">Work Experience</h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <Card key={index}>

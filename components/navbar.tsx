@@ -11,6 +11,9 @@ export function Navbar() {
 
   const navItems = [
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Certifications", href: "#certifications" },
+    { name: "Badges", href: "#badges" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
@@ -25,7 +28,7 @@ export function Navbar() {
               M. Oly Mahmud
             </Link>
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <Link

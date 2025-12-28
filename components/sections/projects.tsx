@@ -25,9 +25,9 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="min-h-screen flex items-center px-4">
-      <div className="max-w-6xl mx-auto py-16 w-full">
-        <h2 className="text-3xl font-bold mb-12 text-center">My Projects</h2>
+    <section id="projects" className="py-20 flex items-center px-4">
+      <div className="max-w-6xl mx-auto w-full">
+        <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="flex flex-col">

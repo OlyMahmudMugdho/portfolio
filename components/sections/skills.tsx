@@ -91,9 +91,9 @@ const skills = [
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="min-h-screen flex items-center bg-muted/50 px-4">
-      <div className="max-w-6xl mx-auto py-16">
-        <h2 className="text-3xl font-bold mb-12 text-center">My Skills</h2>
+    <section id="skills" className="py-20 flex items-center bg-muted/50 px-4">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">My Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {skills.map((skill, index) => (
             <Card key={index} className="transform transition-transform hover:scale-105">

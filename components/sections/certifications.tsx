@@ -19,9 +19,9 @@ const certifications = [
 
 export function CertificationsSection() {
   return (
-    <section id="certifications" className="min-h-screen flex items-center bg-muted/50 px-4">
-      <div className="max-w-4xl mx-auto py-16 w-full">
-        <h2 className="text-3xl font-bold mb-12 text-center">Certifications & Achievements</h2>
+    <section id="certifications" className="py-20 flex items-center bg-muted/50 px-4">
+      <div className="max-w-4xl mx-auto w-full">
+        <h2 className="text-3xl font-bold mb-8 text-center">Certifications & Achievements</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {certifications.map((cert, index) => (
             <Card key={index} className="transform transition-transform hover:scale-105">
