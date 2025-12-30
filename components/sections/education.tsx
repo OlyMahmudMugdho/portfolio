@@ -18,7 +18,6 @@ const education = {
         "Database Management Systems (DBMS)",
         "Computer Architecture",
         "Software Engineering",
-        "System Analysis and Software Testing",
         "Web Development",
         "Artificial Intelligence and Robotics",
         "Digital Image and Speech Processing",
