@@ -34,5 +34,53 @@
       "GitHub Actions",
       "Docker"
     ]
+  },
+  {
+    "title": "Smart Home IoT System",
+    "description": "A full smart home setup using ESP32-S3 and Go-powered backend on AWS. Features MQTT messaging, occupancy detection, environmental monitoring, and a web dashboard.",
+    "image": "https://images.unsplash.com/photo-1702390796625-6dd9b46b1c0b?q=80&w=1580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "link": "https://github.com/OlyMahmudMugdho/iot-smart-home",
+    "tags": [
+      "IoT",
+      "Go",
+      "AWS",
+      "MQTT",
+      "ESP32-S3"
+    ]
+  },
+  {
+    "title": "Authenticator App",
+    "description": "Secure 2-factor authenticator app built with React Native and Expo. Supports TOTP generation and QR code scanning with secure on-device storage.",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop&q=60",
+    "link": "https://github.com/OlyMahmudMugdho/authenticator",
+    "tags": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Security"
+    ]
+  },
+  {
+    "title": "gotenv",
+    "description": "A Go package designed to load environment variables from a .env file into your application. Minimalist and easy to integrate.",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=60",
+    "link": "https://github.com/OlyMahmudMugdho/gotenv",
+    "tags": [
+      "Go",
+      "Environment Variables",
+      "Library"
+    ]
+  },
+  {
+    "title": "Blog App",
+    "description": "Full-stack blog application using Spring Boot, PostgreSQL, Next.js, and TypeScript. Features include secure authentication and responsive UI.",
+    "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&auto=format&fit=crop&q=60",
+    "link": "https://github.com/OlyMahmudMugdho/blog-app-spring-boot",
+    "tags": [
+      "Spring Boot",
+      "PostgreSQL",
+      "Next.js",
+      "TypeScript"
+    ]
   }
 ]
