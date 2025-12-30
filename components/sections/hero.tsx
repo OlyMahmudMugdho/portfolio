@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Download, ExternalLink, Github, Linkedin, Mail } from "lucide-react"
+import { Download, ExternalLink, Github, Linkedin, Mail, FileText } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -35,10 +35,10 @@ export function HeroSection() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-start gap-4 mb-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-600">
-          <a href={"https://res.cloudinary.com/dnmubeloc/image/upload/v1766910201/resume/RESUME_M_OLY_MAHMUD.pdf"} target={"_blank"} className="w-full sm:w-auto">
+          <a href="/resume" target="_blank" className="w-full sm:w-auto">
             <Button size="lg" className="w-full sm:w-auto group relative overflow-hidden bg-primary px-8 py-6 text-lg transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(var(--primary),0.3)]">
-              <Download className="mr-2 h-5 w-5 transition-transform group-hover:-translate-y-1" />
-              Download Resume
+              <FileText className="mr-2 h-5 w-5 transition-transform group-hover:-translate-y-1" />
+              View Resume
             </Button>
           </a>
           <a href={"https://dev.to/olymahmud/"} target={"_blank"} className="w-full sm:w-auto">
