@@ -8,7 +8,7 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="py-20 flex items-center px-4">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">My Projects</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="flex flex-col group overflow-hidden border-border/50 bg-muted/30 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:shadow-2xl">
@@ -30,7 +30,7 @@ export function ProjectsSection() {
               </div>
               <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex-grow">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
+                  <h3 className="text-lg md:text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
                   <p className="text-muted-foreground line-clamp-3 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tags?.map((tag, i) => (

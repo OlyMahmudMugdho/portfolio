@@ -11,13 +11,13 @@ export function Navbar() {
 
   const navItems = [
     { name: "About", href: "#about" },
-    { name: "Education", href: "#education" },
     { name: "Experience", href: "#experience" },
+    { name: "Education", href: "#education" },
+    { name: "Projects", href: "#projects" },
     { name: "Certifications", href: "#certifications" },
     { name: "Badges", href: "#badges" },
-    { name: "Projects", href: "#projects" },
-    { name: "Articles", href: "#articles" },
     { name: "Skills", href: "#skills" },
+    { name: "Recent Articles", href: "#articles" },
     { name: "Contact", href: "#contact" },
   ]
 

@@ -48,7 +48,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="min-h-screen flex items-center px-4">
       <div className="max-w-3xl mx-auto py-16 w-full">
-        <h2 className="text-3xl font-bold mb-12 text-center">Contact Me</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Contact Me</h2>
         <Card>
           <CardContent className="p-6">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -99,8 +99,8 @@ export function ContactSection() {
                 )}
               </div>
 
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="w-full"
                 disabled={isSubmitting}
               >

@@ -8,10 +8,10 @@ export function HeroSection() {
     <section className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-b from-background to-muted/20 pt-16 md:pt-0">
       <div className="max-w-4xl mx-auto text-left">
         <div className="mb-8">
-          <h1 className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
             M. Oly Mahmud
           </h1>
-          <p className="text-2xl text-muted-foreground mb-6">
+          <p className="text-lg md:text-2xl text-muted-foreground mb-6">
             Back-End Focused Software & DevOps Engineer
           </p>
         </div>

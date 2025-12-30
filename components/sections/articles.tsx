@@ -43,7 +43,7 @@ export function ArticlesSection() {
         return (
             <section id="articles" className="py-20 flex items-center px-4">
                 <div className="max-w-6xl mx-auto w-full text-center">
-                    <h2 className="text-3xl font-bold mb-8">Recent Articles</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-8">Recent Articles</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[1, 2, 3].map((i) => (
                             <div key={i} className="h-[400px] rounded-2xl bg-muted animate-pulse" />
@@ -57,7 +57,7 @@ export function ArticlesSection() {
     return (
         <section id="articles" className="py-20 flex items-center px-4 bg-muted/30">
             <div className="max-w-6xl mx-auto w-full">
-                <h2 className="text-3xl font-bold mb-12 text-center">Recent Articles</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Recent Articles</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {articles.map((article) => (
                         <a
@@ -91,7 +91,7 @@ export function ArticlesSection() {
                                             {article.comments_count}
                                         </div>
                                     </div>
-                                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">
+                                    <h3 className="text-lg md:text-xl font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">
                                         {article.title}
                                     </h3>
                                     <p className="text-muted-foreground text-sm line-clamp-3 mb-4">

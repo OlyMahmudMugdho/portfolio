@@ -31,7 +31,7 @@ export function EducationSection() {
     return (
         <section id="education" className="py-20 flex items-center px-4">
             <div className="max-w-4xl mx-auto w-full">
-                <h2 className="text-3xl font-bold mb-12 text-center">Education</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-12">Education</h2>
 
                 <Card className="mb-12 border-primary/20 bg-muted/30 backdrop-blur-sm">
                     <CardContent className="p-8">
@@ -39,11 +39,11 @@ export function EducationSection() {
                             <div className="p-4 bg-primary/10 rounded-xl text-primary h-fit w-fit mx-auto md:mx-0">
                                 <GraduationCap className="h-10 w-10" />
                             </div>
-                            <div className="flex-grow text-center md:text-left">
-                                <h3 className="text-2xl font-bold mb-2">{education.university}</h3>
-                                <p className="text-xl text-primary font-semibold mb-1">{education.degree} in {education.department}</p>
+                            <div className="flex-grow md:text-left">
+                                <h3 className="text-xl md:text-2xl font-bold mb-2">{education.university}</h3>
+                                <p className="text-lg md:text-xl text-primary font-semibold mb-1">{education.degree} in {education.department}</p>
                                 <p className="text-muted-foreground mb-4">{education.equivalency}</p>
-                                <div className="flex items-center justify-center md:justify-start gap-2 text-muted-foreground">
+                                <div className="flex md:justify-start gap-2 text-muted-foreground">
                                     <Calendar className="h-4 w-4" />
                                     <span>{education.period}</span>
                                 </div>
@@ -55,7 +55,7 @@ export function EducationSection() {
                 <div className="space-y-6">
                     <div className="flex items-center gap-3 mb-6">
                         <BookOpen className="h-6 w-6 text-primary" />
-                        <h3 className="text-2xl font-bold">Academic Courses</h3>
+                        <h3 className="text-xl md:text-2xl font-bold">Academic Courses</h3>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {education.courses.map((course, index) => (

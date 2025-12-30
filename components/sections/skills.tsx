@@ -68,7 +68,7 @@ export function SkillsSection() {
   return (
     <section id="skills" className="py-20 flex items-center bg-muted/50 px-4">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-3xl font-bold mb-12 text-center">My Skills</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">My Skills</h2>
 
         <Tabs defaultValue="all" className="w-full">
           <TabsList className="mb-8 flex flex-wrap justify-center h-auto gap-2 bg-transparent">
