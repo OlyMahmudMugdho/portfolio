@@ -54,12 +54,6 @@ export function NewsletterSection() {
                                             Subscribe on LinkedIn
                                         </Button>
                                     </a>
-                                    <Link href="/resume" className="w-full sm:w-auto">
-                                        <Button variant="outline" className="w-full sm:w-auto h-12 px-8 font-semibold transition-all hover:scale-105 active:scale-95 flex items-center gap-2 border-primary/20 hover:bg-primary/5">
-                                            <Send className="w-4 h-4" />
-                                            View PDF Edition
-                                        </Button>
-                                    </Link>
                                 </div>
 
                                 <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4 text-sm text-muted-foreground">
