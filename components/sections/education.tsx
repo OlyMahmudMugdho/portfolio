@@ -1,10 +1,12 @@
+import Image from "next/image"
 import { GraduationCap, BookOpen, Calendar } from "lucide-react"
+
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 
 const education = {
     university: "Pabna University of Science and Technology",
     department: "Information and Communication Engineering (ICE)",
+    logo: "https://res.cloudinary.com/dnmubeloc/image/upload/v1767104629/university/ICE_PUST_LOGO_transparent.png",
     degree: "B.Sc. (Engineering)",
     equivalency: "Officially Equivalent to B.Sc. (Engineering) Information and Communication Technology (ICT)",
     period: "2022 - 2026",
@@ -36,15 +38,21 @@ export function EducationSection() {
                 <Card className="mb-12 border-primary/20 bg-muted/30 backdrop-blur-sm">
                     <CardContent className="p-8">
                         <div className="flex flex-col md:flex-row gap-6">
-                            <div className="p-4 bg-primary/10 rounded-xl text-primary h-fit w-fit mx-auto md:mx-0">
-                                <GraduationCap className="h-10 w-10" />
+                            <div className="flex items-center justify-center mx-auto md:mx-0 shrink-0">
+                                <Image
+                                    src={education.logo}
+                                    alt="Department logo"
+                                    width={80}
+                                    height={80}
+                                    className="object-contain w-20 h-20 md:w-24 md:h-24"
+                                />
                             </div>
                             <div className="flex-grow md:text-left">
-                                <h3 className="text-xl md:text-2xl font-bold mb-2">{education.university}</h3>
-                                <p className="text-lg md:text-xl text-primary font-semibold mb-1">{education.degree} in {education.department}</p>
+                                <h3 className="text-lg md:text-2xl font-bold mb-2">{education.university}</h3>
+                                <p className="text-md md:text-xl text-primary font-semibold mb-1">{education.degree} in {education.department}</p>
                                 <p className="text-muted-foreground mb-4">{education.equivalency}</p>
                                 <div className="flex md:justify-start gap-2 text-muted-foreground">
-                                    <Calendar className="h-4 w-4" />
+                                    <Calendar className="h-7 w-7" />
                                     <span>{education.period}</span>
                                 </div>
                             </div>
