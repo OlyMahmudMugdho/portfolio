@@ -42,9 +42,9 @@ export function EducationSection() {
                                 <Image
                                     src={education.logo}
                                     alt="Department logo"
-                                    width={80}
-                                    height={80}
-                                    className="object-contain w-20 h-20 md:w-24 md:h-24"
+                                    width={140}
+                                    height={140}
+                                    className="object-contain w-28 h-28 md:w-36 md:h-36"
                                 />
                             </div>
                             <div className="flex-grow md:text-left">

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'M. Oly Mahmud - Software & DevOps Engineer',
-  description: 'Portfolio of M. Oly Mahmud - Full-Stack Web Developer & DevOps Engineer specializing in Java, Spring Boot, JavaScript, and Cloud Technologies',
+  description: 'Portfolio of M. Oly Mahmud - Software Engineer, DevOps & Cloud Enthusiast specializing in Java, Spring Boot, Go, DevOps and Cloud Technologies',
 }
 
 export default function RootLayout({
