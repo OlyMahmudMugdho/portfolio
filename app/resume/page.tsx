@@ -103,8 +103,8 @@ export default function NewsletterPage() {
                 </div>
 
                 {/* Floating Controls */}
-                <div className="sticky top-24 z-30 mb-8 flex justify-center">
-                    <div className="flex items-center gap-1 p-1.5 bg-background/80 backdrop-blur-xl border border-border/50 rounded-2xl shadow-2xl shadow-primary/5">
+                <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex justify-center">
+                    <div className="flex items-center gap-1 p-1.5 bg-background/80 backdrop-blur-2xl border border-border/50 rounded-2xl shadow-2xl shadow-primary/10">
                         <div className="flex items-center gap-1 border-r border-border/50 pr-2 mr-1">
                             <Button
                                 variant="ghost"
@@ -115,7 +115,7 @@ export default function NewsletterPage() {
                             >
                                 <ChevronLeft className="h-4 w-4" />
                             </Button>
-                            <span className="text-sm font-medium w-24 text-center tabular-nums">
+                            <span className="text-sm font-medium min-w-[60px] text-center tabular-nums">
                                 {pageNumber} <span className="text-muted-foreground mx-1">/</span> {numPages || '--'}
                             </span>
                             <Button
@@ -133,7 +133,7 @@ export default function NewsletterPage() {
                             <Button variant="ghost" size="icon" onClick={zoomOut} className="h-9 w-9 rounded-xl">
                                 <ZoomOut className="h-4 w-4" />
                             </Button>
-                            <span className="text-sm font-medium w-16 text-center tabular-nums">
+                            <span className="text-sm font-medium min-w-[50px] text-center tabular-nums">
                                 {Math.round(scale * 100)}%
                             </span>
                             <Button variant="ghost" size="icon" onClick={zoomIn} className="h-9 w-9 rounded-xl">
