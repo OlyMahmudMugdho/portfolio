@@ -24,7 +24,7 @@ export function NewsletterSection() {
                             {/* Newsletter Logo */}
                             <div className="shrink-0 flex items-center justify-center">
                                 <Image
-                                    src="https://res.cloudinary.com/dnmubeloc/image/upload/v1767106563/others/software-system-design-newsletter-logo.png"
+                                    src="https://res.cloudinary.com/dnmubeloc/image/upload/v1767969976/others/software-system-design-newsletter-logo-removebg-preview_giwfz6.png"
                                     alt="Software Systems Engineering Logo"
                                     width={160}
                                     height={160}
