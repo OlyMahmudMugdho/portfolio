@@ -9,6 +9,7 @@ import { ProjectsSection } from "@/components/sections/projects"
 import { SkillsSection } from "@/components/sections/skills"
 import { NewsletterSection } from "@/components/sections/newsletter"
 import { ContactSection } from "@/components/sections/contact"
+import { ArticlesSection } from "@/components/sections/articles"
 import { Footer } from "@/components/sections/footer"
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <ExperienceSection />
       <EducationSection />
       <ProjectsSection />
+      <ArticlesSection />
       <CertificationsSection />
       <BadgesSection />
       <SkillsSection />
