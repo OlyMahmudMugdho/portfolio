@@ -5,6 +5,7 @@ import { CalendarIcon, ClockIcon } from "lucide-react"
 import { PostMeta } from "@/lib/blog"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Skeleton } from "@/components/ui/skeleton"
 
 interface PostCardProps {
     post: PostMeta
@@ -65,6 +66,34 @@ export function PostCard({ post }: PostCardProps) {
                 <div className="flex items-center gap-1 pt-4">
                     <ClockIcon className="h-3 w-3" />
                     <span>{post.readingTime}</span>
+                </div>
+            </CardFooter>
+        </Card>
+    )
+}
+export function PostCardSkeleton() {
+    return (
+        <Card className="flex flex-col h-full overflow-hidden">
+            <div className="aspect-video w-full">
+                <Skeleton className="h-full w-full rounded-none" />
+            </div>
+            <CardHeader className="flex-1 pb-2">
+                <Skeleton className="h-7 w-3/4 mb-2" />
+                <Skeleton className="h-7 w-1/2" />
+            </CardHeader>
+            <CardContent className="pb-4">
+                <Skeleton className="h-4 w-full mb-2" />
+                <Skeleton className="h-4 w-full mb-2" />
+                <Skeleton className="h-4 w-2/3" />
+            </CardContent>
+            <CardFooter className="flex items-center justify-between pt-0 border-t mt-auto">
+                <div className="flex items-center gap-1 pt-4">
+                    <Skeleton className="h-3 w-3 rounded-full" />
+                    <Skeleton className="h-3 w-20" />
+                </div>
+                <div className="flex items-center gap-1 pt-4">
+                    <Skeleton className="h-3 w-3 rounded-full" />
+                    <Skeleton className="h-3 w-16" />
                 </div>
             </CardFooter>
         </Card>

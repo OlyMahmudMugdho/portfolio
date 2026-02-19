@@ -21,17 +21,15 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     const currentPage = parseInt(searchParams.page || "1")
     const { category, tag } = searchParams
 
-    const { posts, totalPages } = await getPaginatedPosts(
-        currentPage,
-        POSTS_PER_PAGE,
-        category,
-        tag
-    )
+    const [postsData, allPostsMeta, categories, tags, featuredPosts] = await Promise.all([
+        getPaginatedPosts(currentPage, POSTS_PER_PAGE, category, tag),
+        getAllPosts(),
+        getAllCategories(),
+        getAllTags(),
+        getFeaturedPosts()
+    ])
 
-    const allPostsMeta = await getAllPosts()
-    const categories = await getAllCategories()
-    const tags = await getAllTags()
-    const featuredPosts = await getFeaturedPosts()
+    const { posts, totalPages } = postsData
 
     const isFirstPage = currentPage === 1
     const noFilters = !category && !tag
