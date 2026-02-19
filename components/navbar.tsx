@@ -10,15 +10,15 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
-    { name: "Education", href: "#education" },
-    { name: "Projects", href: "#projects" },
-    { name: "Certifications", href: "#certifications" },
-    { name: "Newsletter", href: "#newsletter" },
-    { name: "Skills", href: "#skills" },
-    { name: "Recent Articles", href: "#articles" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "/#about" },
+    { name: "Experience", href: "/#experience" },
+    { name: "Education", href: "/#education" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Certifications", href: "/#certifications" },
+    { name: "Blog", href: "/blog" },
+    { name: "Newsletter", href: "/#newsletter" },
+    { name: "Skills", href: "/#skills" },
+    { name: "Contact", href: "/#contact" },
   ]
 
   return (
