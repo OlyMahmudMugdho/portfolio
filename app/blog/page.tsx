@@ -64,7 +64,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                                     <Link
                                         key={post.slug}
                                         href={`/blog/${post.slug}`}
-                                        className="group relative grid grid-cols-1 md:grid-cols-2 gap-6 items-center overflow-hidden rounded-2xl border bg-card hover:shadow-xl transition-all duration-300"
+                                        className="group relative grid grid-cols-1 md:grid-cols-2 gap-6 items-center overflow-hidden rounded-none border bg-card dark:bg-background/50 hover:shadow-xl transition-all duration-300"
                                     >
                                         <div className="relative aspect-video md:aspect-square w-full">
                                             {post.coverImage && (
@@ -83,7 +83,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                                             <h3 className="text-2xl md:text-3xl font-bold mb-4 group-hover:text-primary transition-colors">
                                                 {post.title}
                                             </h3>
-                                            <p className="text-muted-foreground mb-6 line-clamp-3">
+                                            <p className="text-muted-foreground text-lg mb-6 line-clamp-3">
                                                 {post.excerpt}
                                             </p>
                                             <div className="flex items-center text-sm font-medium text-primary">

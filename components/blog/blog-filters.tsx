@@ -19,9 +19,9 @@ export function BlogFilters({ categories, tags }: BlogFiltersProps) {
     const hasFilters = activeCategory || activeTag
 
     return (
-        <div className="space-y-6">
+        <div className="space-y-8">
             <div>
-                <h3 className="text-sm font-semibold mb-3 uppercase tracking-wider text-muted-foreground">Categories</h3>
+                <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider text-muted-foreground">Categories</h3>
                 <div className="flex flex-wrap gap-2">
                     {categories.map((category) => (
                         <Link
@@ -30,7 +30,7 @@ export function BlogFilters({ categories, tags }: BlogFiltersProps) {
                         >
                             <Badge
                                 variant={activeCategory === category ? "default" : "outline"}
-                                className="px-3 py-1 cursor-pointer transition-colors"
+                                className="px-4 py-2 cursor-pointer transition-colors text-base"
                             >
                                 {category}
                             </Badge>
@@ -40,8 +40,8 @@ export function BlogFilters({ categories, tags }: BlogFiltersProps) {
             </div>
 
             <div>
-                <h3 className="text-sm font-semibold mb-3 uppercase tracking-wider text-muted-foreground">Tags</h3>
-                <div className="flex flex-wrap gap-2">
+                <h3 className="text-lg font-semibold mb-4 uppercase tracking-wider text-muted-foreground">Tags</h3>
+                <div className="flex flex-wrap gap-3">
                     {tags.map((tag) => (
                         <Link
                             key={tag}
@@ -50,7 +50,7 @@ export function BlogFilters({ categories, tags }: BlogFiltersProps) {
                             <Badge
                                 variant={activeTag === tag ? "default" : "outline"}
                                 className={cn(
-                                    "px-3 py-0.5 cursor-pointer transition-colors text-[10px]",
+                                    "px-3 py-1.5 cursor-pointer transition-colors text-sm",
                                     activeTag === tag ? "" : "text-muted-foreground"
                                 )}
                             >
@@ -64,9 +64,9 @@ export function BlogFilters({ categories, tags }: BlogFiltersProps) {
             {hasFilters && (
                 <Link
                     href="/blog"
-                    className="inline-flex items-center text-xs font-medium text-primary hover:underline gap-1"
+                    className="inline-flex items-center text-base font-medium text-primary hover:underline gap-1 pt-2"
                 >
-                    <X className="h-3 w-3" />
+                    <X className="h-5 w-5" />
                     Clear all filters
                 </Link>
             )}

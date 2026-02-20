@@ -13,8 +13,8 @@ interface PostCardProps {
 
 export function PostCard({ post }: PostCardProps) {
     return (
-        <Card className="flex flex-col h-full overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <Link href={`/blog/${post.slug}`} className="block relative aspect-video w-full overflow-hidden group">
+        <Card className="flex flex-col h-full overflow-hidden rounded-none hover:shadow-lg transition-shadow duration-300 dark:bg-background/50">
+            <Link href={`/blog/${post.slug}`} className="block relative aspect-video w-full overflow-hidden rounded-none group">
                 {post.coverImage ? (
                     <Image
                         src={post.coverImage}
@@ -43,7 +43,7 @@ export function PostCard({ post }: PostCardProps) {
             </CardHeader>
 
             <CardContent className="pb-4">
-                <p className="text-muted-foreground text-sm line-clamp-3">
+                <p className="text-muted-foreground text-base line-clamp-3">
                     {post.excerpt}
                 </p>
             </CardContent>

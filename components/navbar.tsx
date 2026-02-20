@@ -5,8 +5,9 @@ import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
+import { cn } from "@/lib/utils"
 
-export function Navbar() {
+export function Navbar({ className }: { className?: string }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
@@ -23,7 +24,7 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b">
+    <nav className={cn("fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b", className)}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">

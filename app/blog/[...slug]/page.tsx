@@ -78,7 +78,7 @@ export default async function PostPage({ params }: PostPageProps) {
                 </header>
 
                 {post.coverImage && (
-                    <div className="relative aspect-video w-full overflow-hidden rounded-xl border mb-10">
+                    <div className="relative aspect-video w-full overflow-hidden rounded-none border mb-10">
                         <Image
                             src={post.coverImage}
                             alt={post.title}
@@ -98,7 +98,7 @@ export default async function PostPage({ params }: PostPageProps) {
                 </div>
 
                 <div
-                    className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-a:text-primary"
+                    className="prose prose-lg prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-a:text-primary prose-img:rounded-none"
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 />
             </article>
