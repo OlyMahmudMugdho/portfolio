@@ -28,7 +28,7 @@ export default function NewsletterPage() {
     const [containerWidth, setContainerWidth] = useState<number | null>(null)
     const [isMounted, setIsMounted] = useState(false)
 
-    const pdfUrl = 'https://res.cloudinary.com/dnmubeloc/image/upload/v1766910201/resume/RESUME_M_OLY_MAHMUD.pdf'
+    const pdfUrl = 'https://res.cloudinary.com/dnmubeloc/image/upload/v1775054270/resume/RESUME_M_OLY_MAHMUD.pdf'
 
     useEffect(() => {
         setIsMounted(true)
