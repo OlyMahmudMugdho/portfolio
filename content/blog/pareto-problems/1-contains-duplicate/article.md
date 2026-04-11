@@ -5,7 +5,7 @@ excerpt: "Given an integer array nums, return true if any value appears at least
 category: "Coding"
 tags: ["coding", "dsa", "interview"]
 featured: false
-coverImage: "Cloud Computing with AWS.png"
+coverImage: "cover.png"
 author: "M. Oly Mahmud"
 ---
 
