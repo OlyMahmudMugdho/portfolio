@@ -5,7 +5,7 @@ excerpt: "Given the roots of two binary trees p and q, write a function to check
 category: "Coding"
 tags: ["coding", "dsa", "interview"]
 featured: false
-coverImage: "[https://res.cloudinary.com/dnmubeloc/image/upload/v1785475681/blog/maximum-depth-of-binary-tree_gdnwzq.png](https://res.cloudinary.com/dnmubeloc/image/upload/v1785479741/blog/same-tree_yj8mfr.png)"
+coverImage: "https://res.cloudinary.com/dnmubeloc/image/upload/v1785479741/blog/same-tree_yj8mfr.png"
 author: "M. Oly Mahmud"
 ---
 
