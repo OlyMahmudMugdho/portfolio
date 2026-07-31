@@ -346,8 +346,6 @@ dp[i] = dp[i-1] + dp[i-2]
 
 # Python Solution (DP)
 
-<div align="center">
-
 ```python
 class Solution:
     def climbStairs(self, n: int) -> int:
@@ -364,8 +362,6 @@ class Solution:
 
         return dp[n]
 ```
-
-</div>
 
 ---
 
@@ -523,8 +519,6 @@ We only need two variables.
 
 # Optimized Python Solution
 
-<div align="center">
-
 ```python
 class Solution:
     def climbStairs(self, n: int) -> int:
@@ -542,7 +536,6 @@ class Solution:
         return prev1
 ```
 
-</div>
 
 ---
 
