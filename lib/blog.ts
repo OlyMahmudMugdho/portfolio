@@ -2,7 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
-import html from 'remark-html';
+import remarkRehype from 'remark-rehype';
+import rehypeHighlight from 'rehype-highlight';
+import rehypeStringify from 'rehype-stringify';
 import readingTime from 'reading-time';
 
 const postsDirectory = path.join(process.cwd(), 'content/blog');
@@ -57,7 +59,9 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     const { data, content } = matter(fileContents);
 
     const processedContent = await remark()
-        .use(html)
+        .use(remarkRehype, { allowDangerousHtml: true })
+        .use(rehypeHighlight)
+        .use(rehypeStringify, { allowDangerousHtml: true })
         .process(content);
     let contentHtml = processedContent.toString();
 

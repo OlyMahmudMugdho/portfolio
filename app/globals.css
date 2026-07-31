@@ -80,3 +80,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Code block syntax highlighting & styling for blog articles */
+.prose pre {
+  @apply bg-[#0d1117] !text-gray-100 border border-white/10 rounded-xl p-5 overflow-x-auto my-6 shadow-lg;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-sm font-mono border-0 leading-relaxed !text-gray-100;
+}
+
+.prose :not(pre) > code {
+  @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono text-primary font-medium;
+}
+
+.prose :not(pre) > code::before,
+.prose :not(pre) > code::after {
+  content: "";
+}
