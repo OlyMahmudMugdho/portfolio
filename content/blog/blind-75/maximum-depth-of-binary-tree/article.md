@@ -3,7 +3,7 @@ title: "Maximum Depth of Binary Tree"
 date: "2026-07-31"
 excerpt: "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct."
 category: "Coding"
-tags: ["coding", "dsa", "interview"]
+tags: ["coding", "dsa", "interview", "Blind75"]
 featured: false
 coverImage: "https://res.cloudinary.com/dnmubeloc/image/upload/v1785475681/blog/maximum-depth-of-binary-tree_gdnwzq.png"
 author: "M. Oly Mahmud"

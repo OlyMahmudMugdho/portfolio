@@ -3,7 +3,7 @@ title: "Same Tree"
 date: "2026-07-31"
 excerpt: "Given the roots of two binary trees p and q, write a function to check if they are the same or not."
 category: "Coding"
-tags: ["coding", "dsa", "interview"]
+tags: ["coding", "dsa", "interview", "Blind75"]
 featured: false
 coverImage: "https://res.cloudinary.com/dnmubeloc/image/upload/v1785479741/blog/same-tree_yj8mfr.png"
 author: "M. Oly Mahmud"

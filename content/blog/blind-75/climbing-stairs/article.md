@@ -3,7 +3,7 @@ title: "Climbing Stairs"
 date: "2026-07-31"
 excerpt: "You are climbing a staircase. Each time you can climb either 1 or 2 steps. Return the total number of distinct ways to reach the top."
 category: "Coding"
-tags: ["coding", "dsa", "interview"]
+tags: ["coding", "dsa", "interview", "Blind75"]
 featured: false
 coverImage: "https://res.cloudinary.com/dnmubeloc/image/upload/v1785480924/blog/climbing-stairs_kgfi1a.png"
 author: "M. Oly Mahmud"

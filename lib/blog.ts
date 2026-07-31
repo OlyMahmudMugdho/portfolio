@@ -40,8 +40,9 @@ export function getPostSlugs() {
                 arrayOfFiles = getAllFiles(path.join(dirPath, file), arrayOfFiles);
             } else {
                 if (file.endsWith('.md')) {
-                    const relativePath = path.relative(postsDirectory, path.join(dirPath, file));
-                    arrayOfFiles.push(relativePath);
+                    const relativePath = path.relative(postsDirectory, path.join(dirPath, file)).replace(/\\/g, '/');
+                    const cleanSlug = relativePath.replace(/\.md$/, '').replace(/\/article$/, '');
+                    arrayOfFiles.push(cleanSlug);
                 }
             }
         });
@@ -53,8 +54,26 @@ export function getPostSlugs() {
 }
 
 export async function getPostBySlug(slug: string): Promise<Post> {
-    const realSlug = slug.replace(/\.md$/, '');
-    const fullPath = path.join(postsDirectory, `${realSlug}.md`);
+    const cleanSlug = slug.replace(/\.md$/, '').replace(/\/article$/, '');
+
+    let fullPath = path.join(postsDirectory, `${cleanSlug}/article.md`);
+    let postFolder = cleanSlug;
+
+    if (!fs.existsSync(fullPath)) {
+        fullPath = path.join(postsDirectory, `${cleanSlug}.md`);
+        postFolder = path.dirname(cleanSlug);
+    }
+
+    if (!fs.existsSync(fullPath)) {
+        const directPath = path.join(postsDirectory, `${slug.replace(/\.md$/, '')}.md`);
+        if (fs.existsSync(directPath)) {
+            fullPath = directPath;
+            postFolder = path.dirname(slug.replace(/\.md$/, ''));
+        } else {
+            throw new Error(`Post not found for slug: ${slug}`);
+        }
+    }
+
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
 
@@ -66,7 +85,6 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     let contentHtml = processedContent.toString();
 
     // Rewrite relative image paths in the HTML content
-    const postFolder = path.dirname(realSlug);
     contentHtml = contentHtml.replace(/src="(\.\/)?([^":]+)"/g, (match, dotSlash, filename) => {
         if (filename.startsWith('http') || filename.startsWith('/') || filename.startsWith('data:')) {
             return match;
@@ -80,7 +98,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     // Ensure all required fields exist with defaults if missing
     const meta: PostMeta = {
         title: data.title || 'Untitled Post',
-        slug: realSlug,
+        slug: cleanSlug,
         date: data.date ? (data.date instanceof Date ? data.date.toISOString() : String(data.date)) : new Date().toISOString(),
         excerpt: data.excerpt || '',
         category: data.category || 'Uncategorized',
@@ -98,7 +116,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
 
     return {
         ...meta,
-        slug: realSlug,
+        slug: cleanSlug,
         content: contentHtml,
         readingTime: stats.text,
     } as Post;

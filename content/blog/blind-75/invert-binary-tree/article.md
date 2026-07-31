@@ -3,7 +3,7 @@ title: "Invert Binary Tree"
 date: "2026-07-31"
 excerpt: "Given the root of a binary tree, invert the tree by swapping the left and right child of every node, and return the root of the inverted tree."
 category: "Coding"
-tags: ["coding", "dsa", "interview"]
+tags: ["coding", "dsa", "interview", "Blind75"]
 featured: false
 coverImage: "https://res.cloudinary.com/dnmubeloc/image/upload/v1785480285/blog/invert-binary-tree_r8yj3f.png"
 author: "M. Oly Mahmud"
