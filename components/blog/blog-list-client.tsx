@@ -1,0 +1,132 @@
+"use client"
+
+import React, { Suspense } from "react"
+import { useSearchParams } from "next/navigation"
+import { PostCard } from "@/components/blog/post-card"
+import { Pagination } from "@/components/blog/pagination"
+import { BlogFilters } from "@/components/blog/blog-filters"
+import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
+import Image from "next/image"
+import type { PostMeta } from "@/lib/blog"
+
+const POSTS_PER_PAGE = 6
+
+interface BlogListClientProps {
+    allPostsMeta: PostMeta[]
+    categories: string[]
+    tags: string[]
+    featuredPosts: PostMeta[]
+}
+
+function BlogListContent({ allPostsMeta, categories, tags, featuredPosts }: BlogListClientProps) {
+    const searchParams = useSearchParams()
+    const currentPage = parseInt(searchParams.get("page") || "1", 10)
+    const category = searchParams.get("category") || undefined
+    const tag = searchParams.get("tag") || undefined
+
+    let filteredPosts = allPostsMeta
+    if (category) {
+        filteredPosts = filteredPosts.filter((p) => p.category === category)
+    }
+    if (tag) {
+        filteredPosts = filteredPosts.filter((p) => p.tags.includes(tag))
+    }
+
+    const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE)
+    const offset = (currentPage - 1) * POSTS_PER_PAGE
+    const posts = filteredPosts.slice(offset, offset + POSTS_PER_PAGE)
+
+    const isFirstPage = currentPage === 1
+    const noFilters = !category && !tag
+    const showFeatured = isFirstPage && noFilters && featuredPosts.length > 0
+
+    return (
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
+            <aside className="lg:col-span-1 space-y-10 order-2 lg:order-1">
+                <BlogFilters categories={categories} tags={tags} />
+            </aside>
+
+            <div className="lg:col-span-3 order-1 lg:order-2">
+                {showFeatured && (
+                    <section className="mb-16">
+                        <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                            Featured
+                            <Badge variant="default" className="bg-primary text-primary-foreground font-normal">New</Badge>
+                        </h2>
+                        <div className="grid grid-cols-1 gap-8">
+                            {featuredPosts.slice(0, 1).map((post) => (
+                                <Link
+                                    key={post.slug}
+                                    href={`/blog/${post.slug}`}
+                                    className="group relative grid grid-cols-1 md:grid-cols-2 gap-6 items-center overflow-hidden rounded-none border bg-card dark:bg-background/50 hover:shadow-xl transition-all duration-300"
+                                >
+                                    <div className="relative aspect-video md:aspect-square w-full">
+                                        {post.coverImage && (
+                                            <Image
+                                                src={post.coverImage}
+                                                alt={post.title}
+                                                fill
+                                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                            />
+                                        )}
+                                    </div>
+                                    <div className="p-6 md:p-8">
+                                        <Badge variant="secondary" className="mb-4">
+                                            {post.category}
+                                        </Badge>
+                                        <h3 className="text-2xl md:text-3xl font-bold mb-4 group-hover:text-primary transition-colors">
+                                            {post.title}
+                                        </h3>
+                                        <p className="text-muted-foreground text-lg mb-6 line-clamp-3">
+                                            {post.excerpt}
+                                        </p>
+                                        <div className="flex items-center text-sm font-medium text-primary">
+                                            Read post →
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </section>
+                )}
+
+                <section>
+                    <h2 className="text-2xl font-bold mb-6">
+                        {category ? `Category: ${category}` : tag ? `Tag: #${tag}` : "Latest Posts"}
+                    </h2>
+
+                    {posts.length > 0 ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {posts.map((post) => (
+                                <PostCard key={post.slug} post={post} />
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="py-20 text-center border rounded-xl bg-muted/30">
+                            <p className="text-muted-foreground">No posts found matching your criteria.</p>
+                            <Link href="/blog" className="text-primary hover:underline mt-4 inline-block font-medium">
+                                View all posts
+                            </Link>
+                        </div>
+                    )}
+
+                    <Pagination
+                        totalPages={totalPages}
+                        currentPage={currentPage}
+                        category={category}
+                        tag={tag}
+                    />
+                </section>
+            </div>
+        </div>
+    )
+}
+
+export function BlogListClient(props: BlogListClientProps) {
+    return (
+        <Suspense fallback={<div className="py-20 text-center text-muted-foreground">Loading posts...</div>}>
+            <BlogListContent {...props} />
+        </Suspense>
+    )
+}

@@ -2,6 +2,31 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+export async function generateStaticParams() {
+    const blogDir = path.join(process.cwd(), 'content/blog');
+    if (!fs.existsSync(blogDir)) return [];
+
+    const assets: { path: string[] }[] = [];
+    const getAllFiles = (dir: string) => {
+        const files = fs.readdirSync(dir);
+        for (const file of files) {
+            const fullPath = path.join(dir, file);
+            if (fs.statSync(fullPath).isDirectory()) {
+                getAllFiles(fullPath);
+            } else if (!file.endsWith('.md')) {
+                const relPath = path.relative(blogDir, fullPath);
+                assets.push({ path: relPath.split(path.sep) });
+            }
+        }
+    };
+
+    getAllFiles(blogDir);
+    if (assets.length === 0) {
+        assets.push({ path: ['dummy.png'] });
+    }
+    return assets;
+}
+
 export async function GET(
     request: NextRequest,
     { params }: { params: { path: string[] } }
