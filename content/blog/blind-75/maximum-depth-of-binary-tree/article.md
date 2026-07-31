@@ -5,7 +5,7 @@ excerpt: "Given an integer array nums, return true if any value appears at least
 category: "Coding"
 tags: ["coding", "dsa", "interview"]
 featured: false
-coverImage: "[cover.png](https://res.cloudinary.com/dnmubeloc/image/upload/v1785475681/blog/maximum-depth-of-binary-tree_gdnwzq.png)"
+coverImage: "https://res.cloudinary.com/dnmubeloc/image/upload/v1785475681/blog/maximum-depth-of-binary-tree_gdnwzq.png"
 author: "M. Oly Mahmud"
 ---
 
