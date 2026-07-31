@@ -28,6 +28,7 @@ A **leaf node** is a node that has no left or right child.
 ---
 
 ## Example
+<div align="center">
 
 ```
         3
@@ -36,6 +37,7 @@ A **leaf node** is a node that has no left or right child.
          / \
         15  7
 ```
+</div>
 
 The longest paths are:
 
